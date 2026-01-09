@@ -133,7 +133,6 @@
             this.label7.Size = new System.Drawing.Size(27, 15);
             this.label7.TabIndex = 10;
             this.label7.Text = "Yaş:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -143,7 +142,6 @@
             this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 9;
             this.label6.Text = "Cinsiyet:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // dateTimePicker1
             // 
@@ -192,7 +190,6 @@
             this.label4.Size = new System.Drawing.Size(42, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Teşhis:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -202,7 +199,6 @@
             this.label3.Size = new System.Drawing.Size(80, 15);
             this.label3.TabIndex = 1;
             this.label3.Text = "Hastalık Türü:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -212,7 +208,6 @@
             this.label2.Size = new System.Drawing.Size(60, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ad Soyad:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // hastaneDataSet1
             // 

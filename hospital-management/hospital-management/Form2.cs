@@ -15,7 +15,7 @@ namespace hospital_management
     public partial class Form2 : Form
     {
 
-        SqlConnection baglan = new SqlConnection(@"Server=.\SQLEXPRESS;Database=hastane;Trusted_Connection=True;TrustServerCertificate=True;");
+        SqlConnection baglan = new SqlConnection("Server=63.178.197.220,1433;Database=hastane;User Id=dbuser;Password=1234;TrustServerCertificate=True;");
 
 
         public Form2()
@@ -44,32 +44,8 @@ namespace hospital_management
 
             baglan.Close();
         }
+
         //kaydet butonu
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || comboBox1.SelectedIndex == -1)

@@ -1,6 +1,13 @@
 # Visual Studio
 .vs/
-bin/
-obj/
+
+# .NET build outputs (her yerde)
+**/bin/
+**/obj/
+
+# user files
 *.user
 *.suo
+*.exe
+*.pdb
+*.cache
