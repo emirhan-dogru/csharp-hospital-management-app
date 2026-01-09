@@ -8,3 +8,14 @@ C:\Users\Administrator\Desktop\csharp-hospital-management-app\hospital-managemen
 C:\Users\Administrator\Desktop\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.exe
 C:\Users\Administrator\Desktop\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.pdb
 C:\Users\Administrator\Desktop\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital_management.Form1.resources
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\bin\Debug\hospital-management.exe.config
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\bin\Debug\hospital-management.exe
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\bin\Debug\hospital-management.pdb
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.csproj.AssemblyReference.cache
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital_management.Form1.resources
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital_management.Form2.resources
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital_management.Properties.Resources.resources
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.csproj.GenerateResource.cache
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.csproj.CoreCompileInputs.cache
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.exe
+C:\Users\Akın Atasayar\Documents\GitHub\csharp-hospital-management-app\hospital-management\hospital-management\obj\Debug\hospital-management.pdb
