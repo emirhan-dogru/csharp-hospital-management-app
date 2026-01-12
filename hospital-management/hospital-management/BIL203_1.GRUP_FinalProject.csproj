@@ -7,7 +7,7 @@
     <ProjectGuid>{37A42796-050A-4409-9B89-7228A0FA29F0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>hospital_management</RootNamespace>
-    <AssemblyName>hospital-management</AssemblyName>
+    <AssemblyName>BIL203_1.GRUP_FinalProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
