@@ -65,7 +65,7 @@ namespace hospital_management
             int taburcu = (int)TaburcuHasta.ExecuteScalar();
             TaburcuHastaSonuc.Text = taburcu.ToString();
 
-            SqlCommand OrtalamaYatis = new SqlCommand("SELECT AVG(DATEDIFF(DAY, YatisTarihi, ISNULL(TaburcuTarihi, GETDATE()))) FROM Hasta", baglan);
+            SqlCommand OrtalamaYatis = new SqlCommand("SELECT AVG(DATEDIFF(DAY, YatisTarihi, TaburcuTarihi)) FROM Hasta WHERE TaburcuTarihi IS NOT NULL",baglan);
             object ortalama = OrtalamaYatis.ExecuteScalar();
             if (ortalama != DBNull.Value)
             {

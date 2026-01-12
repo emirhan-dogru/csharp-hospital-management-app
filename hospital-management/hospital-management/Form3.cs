@@ -103,6 +103,7 @@ namespace hospital_management
                     dateTimePicker2.Text = null;
                 }
             }
+            textBox3.Text = dr["UygulananTedaviler"].ToString();
 
             dr.Close();
             baglan.Close();
@@ -183,6 +184,11 @@ namespace hospital_management
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
