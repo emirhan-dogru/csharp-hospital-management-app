@@ -30,7 +30,7 @@ namespace hospital_management
 
         void BilgileriGoster()
         {
-            da = new SqlDataAdapter("SELECT h.Id, h.AdSoyad, t.HastalikAdi, h.TeshisDetayi, h.YatisTarihi, CASE WHEN h.Cinsiyet = 0 THEN 'Erkek' ELSE 'Kadın' END AS Cinsiyet, h.Yas, h.TaburcuTarihi FROM Hasta h INNER JOIN HastalikTuru t ON h.HastalikTuruId = t.Id", baglan);
+            da = new SqlDataAdapter("SELECT h.Id, h.AdSoyad, t.HastalikAdi, h.TeshisDetayi, h.YatisTarihi, CASE WHEN h.Cinsiyet = 0 THEN 'Erkek' ELSE 'Kadın' END AS Cinsiyet, h.Yas, ISNULL(h.UygulananTedaviler, 'Tedavi Devam Ediyor') AS UygulananTedaviler, h.TaburcuTarihi FROM Hasta h INNER JOIN HastalikTuru t ON h.HastalikTuruId = t.Id", baglan);
             ds = new DataSet();
             baglan.Open();
             da.Fill(ds, "Hasta");
@@ -45,6 +45,7 @@ namespace hospital_management
             dataGridView1.Columns["Cinsiyet"].HeaderText = "Cinsiyet";
             dataGridView1.Columns["Yas"].HeaderText = "Yaş";
             dataGridView1.Columns["TaburcuTarihi"].HeaderText = "Taburcu";
+            dataGridView1.Columns["UygulananTedaviler"].HeaderText = "Uygulanan Tedaviler";
         }
 
 

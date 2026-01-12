@@ -124,11 +124,11 @@ namespace hospital_management
             string guncelle;
             if (checkBox1.Checked)
             {
-                guncelle = "UPDATE Hasta SET AdSoyad=@adsoyad, HastalikTuruId=@hastalikturuId, TeshisDetayi=@teshis, YatisTarihi=@yatisTarihi, Cinsiyet=@cinsiyet, Yas=@yas, TaburcuTarihi=@taburcuTarihi WHERE Id=@id";
+                guncelle = "UPDATE Hasta SET AdSoyad=@adsoyad, HastalikTuruId=@hastalikturuId, TeshisDetayi=@teshis, YatisTarihi=@yatisTarihi, Cinsiyet=@cinsiyet, Yas=@yas, TaburcuTarihi=@taburcuTarihi, UygulananTedaviler=@uygulananTedaviler WHERE Id=@id";
             }
             else
             {
-                guncelle = "UPDATE Hasta SET AdSoyad=@adsoyad, HastalikTuruId=@hastalikturuId, TeshisDetayi=@teshis, YatisTarihi=@yatisTarihi, Cinsiyet=@cinsiyet, Yas=@yas, TaburcuTarihi=NULL WHERE Id=@id";
+                guncelle = "UPDATE Hasta SET AdSoyad=@adsoyad, HastalikTuruId=@hastalikturuId, TeshisDetayi=@teshis, YatisTarihi=@yatisTarihi, Cinsiyet=@cinsiyet, Yas=@yas, TaburcuTarihi=NULL, UygulananTedaviler=@uygulananTedaviler WHERE Id=@id";
             }
 
             SqlCommand VeriGuncelle = new SqlCommand(guncelle, baglan);
@@ -139,6 +139,7 @@ namespace hospital_management
             VeriGuncelle.Parameters.AddWithValue("@yatisTarihi", dateTimePicker1.Value);
             VeriGuncelle.Parameters.AddWithValue("@cinsiyet", radioButton1.Checked ? 0 : 1);
             VeriGuncelle.Parameters.AddWithValue("@yas", numericUpDown1.Value);
+            VeriGuncelle.Parameters.AddWithValue("@uygulananTedaviler", textBox3.Text);
 
             if (checkBox1.Checked)
             {
