@@ -32,29 +32,29 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_uygulnanTedaviler = new System.Windows.Forms.TextBox();
+            this.btn_guncelle = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.dateT_taburcuTarihi = new System.Windows.Forms.DateTimePicker();
+            this.taburcu_checkbox = new System.Windows.Forms.CheckBox();
+            this.numbertxt_Yas = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioBtn_kadin = new System.Windows.Forms.RadioButton();
+            this.radioBtn_erkek = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateT_yatisTarihi = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_teshis = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbox_hstalikTuru = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_adSoyad = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_kapat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numbertxt_Yas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,7 +63,7 @@
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(30, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 29);
+            this.label1.Size = new System.Drawing.Size(371, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hasta Güncelle";
             // 
@@ -98,23 +98,23 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.txt_uygulnanTedaviler);
+            this.groupBox2.Controls.Add(this.btn_guncelle);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.dateT_taburcuTarihi);
+            this.groupBox2.Controls.Add(this.taburcu_checkbox);
+            this.groupBox2.Controls.Add(this.numbertxt_Yas);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radioBtn_kadin);
+            this.groupBox2.Controls.Add(this.radioBtn_erkek);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dateT_yatisTarihi);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txt_teshis);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbox_hstalikTuru);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txt_adSoyad);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.Location = new System.Drawing.Point(279, 73);
@@ -124,186 +124,186 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hasta Bilgileri";
             // 
-            // button1
+            // txt_uygulnanTedaviler
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Location = new System.Drawing.Point(216, 493);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 37);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Güncelle";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txt_uygulnanTedaviler.Location = new System.Drawing.Point(180, 403);
+            this.txt_uygulnanTedaviler.Multiline = true;
+            this.txt_uygulnanTedaviler.Name = "txt_uygulnanTedaviler";
+            this.txt_uygulnanTedaviler.Size = new System.Drawing.Size(224, 66);
+            this.txt_uygulnanTedaviler.TabIndex = 17;
             // 
-            // dateTimePicker2
+            // btn_guncelle
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(180, 337);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(224, 26);
-            this.dateTimePicker2.TabIndex = 14;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(72, 342);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(85, 22);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Taburcu:";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(180, 293);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(224, 26);
-            this.numericUpDown1.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(120, 301);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 18);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Yaş:";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(308, 256);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(66, 22);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Kadın";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(180, 256);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 22);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Erkek";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(89, 258);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 18);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Cinsiyet:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(180, 208);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 26);
-            this.dateTimePicker1.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(72, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 18);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Yatış Tarihi:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(180, 127);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 66);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(101, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Teşhis:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(180, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 26);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Hastalık Türü:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(180, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 26);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(76, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Ad Soyad:";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(566, 619);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 42);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Kapat";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(180, 403);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(224, 66);
-            this.textBox3.TabIndex = 17;
+            this.btn_guncelle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_guncelle.Location = new System.Drawing.Point(216, 493);
+            this.btn_guncelle.Name = "btn_guncelle";
+            this.btn_guncelle.Size = new System.Drawing.Size(147, 37);
+            this.btn_guncelle.TabIndex = 15;
+            this.btn_guncelle.Text = "Güncelle";
+            this.btn_guncelle.UseVisualStyleBackColor = false;
+            this.btn_guncelle.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(7, 406);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 18);
+            this.label8.Size = new System.Drawing.Size(305, 36);
             this.label8.TabIndex = 16;
             this.label8.Text = "Uygulanan Tedaviler:";
             // 
+            // dateT_taburcuTarihi
+            // 
+            this.dateT_taburcuTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateT_taburcuTarihi.Location = new System.Drawing.Point(180, 337);
+            this.dateT_taburcuTarihi.Name = "dateT_taburcuTarihi";
+            this.dateT_taburcuTarihi.Size = new System.Drawing.Size(224, 44);
+            this.dateT_taburcuTarihi.TabIndex = 14;
+            // 
+            // taburcu_checkbox
+            // 
+            this.taburcu_checkbox.AutoSize = true;
+            this.taburcu_checkbox.Location = new System.Drawing.Point(72, 342);
+            this.taburcu_checkbox.Name = "taburcu_checkbox";
+            this.taburcu_checkbox.Size = new System.Drawing.Size(168, 40);
+            this.taburcu_checkbox.TabIndex = 13;
+            this.taburcu_checkbox.Text = "Taburcu:";
+            this.taburcu_checkbox.UseVisualStyleBackColor = true;
+            this.taburcu_checkbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // numbertxt_Yas
+            // 
+            this.numbertxt_Yas.Location = new System.Drawing.Point(180, 293);
+            this.numbertxt_Yas.Name = "numbertxt_Yas";
+            this.numbertxt_Yas.Size = new System.Drawing.Size(224, 44);
+            this.numbertxt_Yas.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(120, 301);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 36);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Yaş:";
+            // 
+            // radioBtn_kadin
+            // 
+            this.radioBtn_kadin.AutoSize = true;
+            this.radioBtn_kadin.Location = new System.Drawing.Point(308, 256);
+            this.radioBtn_kadin.Name = "radioBtn_kadin";
+            this.radioBtn_kadin.Size = new System.Drawing.Size(128, 40);
+            this.radioBtn_kadin.TabIndex = 10;
+            this.radioBtn_kadin.TabStop = true;
+            this.radioBtn_kadin.Text = "Kadın";
+            this.radioBtn_kadin.UseVisualStyleBackColor = true;
+            // 
+            // radioBtn_erkek
+            // 
+            this.radioBtn_erkek.AutoSize = true;
+            this.radioBtn_erkek.Location = new System.Drawing.Point(180, 256);
+            this.radioBtn_erkek.Name = "radioBtn_erkek";
+            this.radioBtn_erkek.Size = new System.Drawing.Size(127, 40);
+            this.radioBtn_erkek.TabIndex = 9;
+            this.radioBtn_erkek.TabStop = true;
+            this.radioBtn_erkek.Text = "Erkek";
+            this.radioBtn_erkek.UseVisualStyleBackColor = true;
+            this.radioBtn_erkek.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(89, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(136, 36);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Cinsiyet:";
+            // 
+            // dateT_yatisTarihi
+            // 
+            this.dateT_yatisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateT_yatisTarihi.Location = new System.Drawing.Point(180, 208);
+            this.dateT_yatisTarihi.Name = "dateT_yatisTarihi";
+            this.dateT_yatisTarihi.Size = new System.Drawing.Size(224, 44);
+            this.dateT_yatisTarihi.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(72, 216);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(177, 36);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Yatış Tarihi:";
+            // 
+            // txt_teshis
+            // 
+            this.txt_teshis.Location = new System.Drawing.Point(180, 127);
+            this.txt_teshis.Multiline = true;
+            this.txt_teshis.Name = "txt_teshis";
+            this.txt_teshis.Size = new System.Drawing.Size(224, 66);
+            this.txt_teshis.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(101, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 36);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Teşhis:";
+            // 
+            // cmbox_hstalikTuru
+            // 
+            this.cmbox_hstalikTuru.FormattingEnabled = true;
+            this.cmbox_hstalikTuru.Location = new System.Drawing.Point(180, 91);
+            this.cmbox_hstalikTuru.Name = "cmbox_hstalikTuru";
+            this.cmbox_hstalikTuru.Size = new System.Drawing.Size(224, 44);
+            this.cmbox_hstalikTuru.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(56, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(212, 36);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Hastalık Türü:";
+            // 
+            // txt_adSoyad
+            // 
+            this.txt_adSoyad.Location = new System.Drawing.Point(180, 42);
+            this.txt_adSoyad.Name = "txt_adSoyad";
+            this.txt_adSoyad.Size = new System.Drawing.Size(224, 44);
+            this.txt_adSoyad.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(76, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 36);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Ad Soyad:";
+            // 
+            // btn_kapat
+            // 
+            this.btn_kapat.BackColor = System.Drawing.Color.Red;
+            this.btn_kapat.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_kapat.Location = new System.Drawing.Point(566, 619);
+            this.btn_kapat.Name = "btn_kapat";
+            this.btn_kapat.Size = new System.Drawing.Size(140, 42);
+            this.btn_kapat.TabIndex = 16;
+            this.btn_kapat.Text = "Kapat";
+            this.btn_kapat.UseVisualStyleBackColor = false;
+            this.btn_kapat.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 670);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_kapat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -315,7 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numbertxt_Yas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,23 +328,23 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_adSoyad;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateT_yatisTarihi;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_teshis;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbox_hstalikTuru;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioBtn_kadin;
+        private System.Windows.Forms.RadioButton radioBtn_erkek;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.CheckBox taburcu_checkbox;
+        private System.Windows.Forms.NumericUpDown numbertxt_Yas;
+        private System.Windows.Forms.Button btn_kapat;
+        private System.Windows.Forms.Button btn_guncelle;
+        private System.Windows.Forms.DateTimePicker dateT_taburcuTarihi;
+        private System.Windows.Forms.TextBox txt_uygulnanTedaviler;
         private System.Windows.Forms.Label label8;
     }
 }

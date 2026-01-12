@@ -50,10 +50,10 @@ namespace hospital_management
             da2.Fill(dt);
             baglan.Close();
 
-            comboBox1.DataSource = dt;
-            comboBox1.DisplayMember = "HastalikAdi";
-            comboBox1.ValueMember = "Id";
-            comboBox1.SelectedIndex = -1;
+            cmbox_hstalikTuru.DataSource = dt;
+            cmbox_hstalikTuru.DisplayMember = "HastalikAdi";
+            cmbox_hstalikTuru.ValueMember = "Id";
+            cmbox_hstalikTuru.SelectedIndex = -1;
         }
 
         // datagridviewdan hasta secildiginde
@@ -73,37 +73,37 @@ namespace hospital_management
 
             if (dr.Read())
             {
-                textBox1.Text = dr["AdSoyad"].ToString();
-                comboBox1.SelectedValue = dr["HastalikTuruId"];
-                textBox2.Text = dr["TeshisDetayi"].ToString();
-                dateTimePicker1.Value = Convert.ToDateTime(dr["YatisTarihi"]);
+                txt_adSoyad.Text = dr["AdSoyad"].ToString();
+                cmbox_hstalikTuru.SelectedValue = dr["HastalikTuruId"];
+                txt_teshis.Text = dr["TeshisDetayi"].ToString();
+                dateT_yatisTarihi.Value = Convert.ToDateTime(dr["YatisTarihi"]);
 
                 int cinsiyet = Convert.ToInt32(dr["Cinsiyet"]);
                 if (cinsiyet == 0)
                 {
-                    radioButton1.Checked = true;
+                    radioBtn_erkek.Checked = true;
                 }
                 else
                 {
-                    radioButton2.Checked = true;
+                    radioBtn_kadin.Checked = true;
                 }
 
-                numericUpDown1.Value = Convert.ToInt32(dr["Yas"]);
+                numbertxt_Yas.Value = Convert.ToInt32(dr["Yas"]);
 
                 if (dr["TaburcuTarihi"] != DBNull.Value)
                 {
-                    checkBox1.Checked = true;
-                    dateTimePicker2.Value = Convert.ToDateTime(dr["TaburcuTarihi"]);
-                    dateTimePicker2.Enabled = true;
+                    taburcu_checkbox.Checked = true;
+                    dateT_taburcuTarihi.Value = Convert.ToDateTime(dr["TaburcuTarihi"]);
+                    dateT_taburcuTarihi.Enabled = true;
                 }
                 else
                 {
-                    checkBox1.Checked = false;
-                    dateTimePicker2.Enabled = false;
-                    dateTimePicker2.Text = null;
+                    taburcu_checkbox.Checked = false;
+                    dateT_taburcuTarihi.Enabled = false;
+                    dateT_taburcuTarihi.Text = null;
                 }
             }
-            textBox3.Text = dr["UygulananTedaviler"].ToString();
+            txt_uygulnanTedaviler.Text = dr["UygulananTedaviler"].ToString();
 
             dr.Close();
             baglan.Close();
@@ -123,7 +123,7 @@ namespace hospital_management
             baglan.Open();
 
             string guncelle;
-            if (checkBox1.Checked)
+            if (taburcu_checkbox.Checked)
             {
                 guncelle = "UPDATE Hasta SET AdSoyad=@adsoyad, HastalikTuruId=@hastalikturuId, TeshisDetayi=@teshis, YatisTarihi=@yatisTarihi, Cinsiyet=@cinsiyet, Yas=@yas, TaburcuTarihi=@taburcuTarihi, UygulananTedaviler=@uygulananTedaviler WHERE Id=@id";
             }
@@ -134,17 +134,17 @@ namespace hospital_management
 
             SqlCommand VeriGuncelle = new SqlCommand(guncelle, baglan);
             VeriGuncelle.Parameters.AddWithValue("@id", secilenId);
-            VeriGuncelle.Parameters.AddWithValue("@adsoyad", textBox1.Text);
-            VeriGuncelle.Parameters.AddWithValue("@hastalikturuId", comboBox1.SelectedValue);
-            VeriGuncelle.Parameters.AddWithValue("@teshis", textBox2.Text);
-            VeriGuncelle.Parameters.AddWithValue("@yatisTarihi", dateTimePicker1.Value);
-            VeriGuncelle.Parameters.AddWithValue("@cinsiyet", radioButton1.Checked ? 0 : 1);
-            VeriGuncelle.Parameters.AddWithValue("@yas", numericUpDown1.Value);
-            VeriGuncelle.Parameters.AddWithValue("@uygulananTedaviler", textBox3.Text);
+            VeriGuncelle.Parameters.AddWithValue("@adsoyad", txt_adSoyad.Text);
+            VeriGuncelle.Parameters.AddWithValue("@hastalikturuId", cmbox_hstalikTuru.SelectedValue);
+            VeriGuncelle.Parameters.AddWithValue("@teshis", txt_teshis.Text);
+            VeriGuncelle.Parameters.AddWithValue("@yatisTarihi", dateT_yatisTarihi.Value);
+            VeriGuncelle.Parameters.AddWithValue("@cinsiyet", radioBtn_erkek.Checked ? 0 : 1);
+            VeriGuncelle.Parameters.AddWithValue("@yas", numbertxt_Yas.Value);
+            VeriGuncelle.Parameters.AddWithValue("@uygulananTedaviler", txt_uygulnanTedaviler.Text);
 
-            if (checkBox1.Checked)
+            if (taburcu_checkbox.Checked)
             {
-                VeriGuncelle.Parameters.AddWithValue("@taburcuTarihi", dateTimePicker2.Value);
+                VeriGuncelle.Parameters.AddWithValue("@taburcuTarihi", dateT_taburcuTarihi.Value);
             }
 
             VeriGuncelle.ExecuteNonQuery();
@@ -158,23 +158,23 @@ namespace hospital_management
         // taburcu checkbox
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            dateTimePicker2.Enabled = checkBox1.Checked;
-            if (checkBox1.Checked)
+            dateT_taburcuTarihi.Enabled = taburcu_checkbox.Checked;
+            if (taburcu_checkbox.Checked)
             {
-                dateTimePicker2.Value = DateTime.Now;
+                dateT_taburcuTarihi.Value = DateTime.Now;
             }
         }
 
         void Temizle()
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            comboBox1.SelectedIndex = -1;
-            dateTimePicker1.Value = DateTime.Now;
-            radioButton1.Checked = true;
-            numericUpDown1.Value = 1;
-            checkBox1.Checked = false;
-            dateTimePicker2.Enabled = false;
+            txt_adSoyad.Text = "";
+            txt_teshis.Text = "";
+            cmbox_hstalikTuru.SelectedIndex = -1;
+            dateT_yatisTarihi.Value = DateTime.Now;
+            radioBtn_erkek.Checked = true;
+            numbertxt_Yas.Value = 1;
+            taburcu_checkbox.Checked = false;
+            dateT_taburcuTarihi.Enabled = false;
         }
 
         // kapat butonu
