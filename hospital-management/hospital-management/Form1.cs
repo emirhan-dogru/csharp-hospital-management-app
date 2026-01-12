@@ -164,5 +164,10 @@ namespace hospital_management
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
