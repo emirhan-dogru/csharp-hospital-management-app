@@ -133,5 +133,10 @@ namespace hospital_management
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
