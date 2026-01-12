@@ -74,6 +74,18 @@ namespace hospital_management
             {
                 OrtalamaYatısSonuc.Text = "0 gün";
             }
+
+            SqlCommand EnCokHastalik = new SqlCommand("SELECT TOP 1 t.HastalikAdi FROM Hasta h INNER JOIN HastalikTuru t ON h.HastalikTuruId = t.Id GROUP BY t.HastalikAdi ORDER BY COUNT(*) DESC", baglan);
+            object encok = EnCokHastalik.ExecuteScalar();
+            if (encok != null)
+            {
+                EnCokGorulen.Text = encok.ToString();
+            }
+            else
+            {
+                EnCokGorulen.Text = "-";
+            }
+
             baglan.Close();
         }
 
@@ -133,6 +145,21 @@ namespace hospital_management
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToplamHastaSonuc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrtalamaYatısSonuc_TextChanged(object sender, EventArgs e)
         {
 
         }

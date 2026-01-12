@@ -31,13 +31,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.EnCokGorulen = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.OrtalamaYatısSonuc = new System.Windows.Forms.TextBox();
             this.TaburcuHastaSonuc = new System.Windows.Forms.TextBox();
             this.YatanHastaSonuc = new System.Windows.Forms.TextBox();
             this.ToplamHastaSonuc = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -76,13 +77,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.EnCokGorulen);
+            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox8);
             this.groupBox1.Controls.Add(this.OrtalamaYatısSonuc);
             this.groupBox1.Controls.Add(this.TaburcuHastaSonuc);
             this.groupBox1.Controls.Add(this.YatanHastaSonuc);
             this.groupBox1.Controls.Add(this.ToplamHastaSonuc);
             this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -95,12 +97,32 @@
             this.groupBox1.Text = "İstatistikler";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // EnCokGorulen
+            // 
+            this.EnCokGorulen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EnCokGorulen.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnCokGorulen.Location = new System.Drawing.Point(221, 146);
+            this.EnCokGorulen.Name = "EnCokGorulen";
+            this.EnCokGorulen.Size = new System.Drawing.Size(100, 19);
+            this.EnCokGorulen.TabIndex = 11;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(6, 146);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(154, 19);
+            this.textBox5.TabIndex = 10;
+            this.textBox5.Text = "En çok görülen hastalık: ";
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.SystemColors.Control;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox8.Location = new System.Drawing.Point(6, 140);
+            this.textBox8.Location = new System.Drawing.Point(6, 117);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(145, 19);
             this.textBox8.TabIndex = 9;
@@ -109,34 +131,42 @@
             // OrtalamaYatısSonuc
             // 
             this.OrtalamaYatısSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OrtalamaYatısSonuc.Location = new System.Drawing.Point(221, 137);
+            this.OrtalamaYatısSonuc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrtalamaYatısSonuc.Location = new System.Drawing.Point(221, 117);
             this.OrtalamaYatısSonuc.Name = "OrtalamaYatısSonuc";
-            this.OrtalamaYatısSonuc.Size = new System.Drawing.Size(100, 22);
+            this.OrtalamaYatısSonuc.Size = new System.Drawing.Size(100, 19);
             this.OrtalamaYatısSonuc.TabIndex = 8;
+            this.OrtalamaYatısSonuc.TextChanged += new System.EventHandler(this.OrtalamaYatısSonuc_TextChanged);
             // 
             // TaburcuHastaSonuc
             // 
             this.TaburcuHastaSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TaburcuHastaSonuc.Location = new System.Drawing.Point(221, 93);
+            this.TaburcuHastaSonuc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaburcuHastaSonuc.Location = new System.Drawing.Point(221, 92);
             this.TaburcuHastaSonuc.Name = "TaburcuHastaSonuc";
-            this.TaburcuHastaSonuc.Size = new System.Drawing.Size(100, 22);
+            this.TaburcuHastaSonuc.Size = new System.Drawing.Size(100, 19);
             this.TaburcuHastaSonuc.TabIndex = 7;
             // 
             // YatanHastaSonuc
             // 
             this.YatanHastaSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.YatanHastaSonuc.Location = new System.Drawing.Point(221, 62);
+            this.YatanHastaSonuc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YatanHastaSonuc.ForeColor = System.Drawing.SystemColors.Control;
+            this.YatanHastaSonuc.Location = new System.Drawing.Point(221, 67);
             this.YatanHastaSonuc.Name = "YatanHastaSonuc";
-            this.YatanHastaSonuc.Size = new System.Drawing.Size(100, 22);
+            this.YatanHastaSonuc.Size = new System.Drawing.Size(100, 19);
             this.YatanHastaSonuc.TabIndex = 6;
             // 
             // ToplamHastaSonuc
             // 
             this.ToplamHastaSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ToplamHastaSonuc.Location = new System.Drawing.Point(221, 34);
+            this.ToplamHastaSonuc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToplamHastaSonuc.ForeColor = System.Drawing.SystemColors.Control;
+            this.ToplamHastaSonuc.Location = new System.Drawing.Point(221, 36);
             this.ToplamHastaSonuc.Name = "ToplamHastaSonuc";
-            this.ToplamHastaSonuc.Size = new System.Drawing.Size(100, 22);
+            this.ToplamHastaSonuc.Size = new System.Drawing.Size(100, 19);
             this.ToplamHastaSonuc.TabIndex = 5;
+            this.ToplamHastaSonuc.TextChanged += new System.EventHandler(this.ToplamHastaSonuc_TextChanged);
             // 
             // textBox6
             // 
@@ -146,19 +176,11 @@
             this.textBox6.Size = new System.Drawing.Size(100, 22);
             this.textBox6.TabIndex = 4;
             // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(6, 181);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 3;
-            // 
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(6, 104);
+            this.textBox4.Location = new System.Drawing.Point(6, 92);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(145, 19);
@@ -169,7 +191,7 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(6, 73);
+            this.textBox3.Location = new System.Drawing.Point(6, 67);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 19);
             this.textBox3.TabIndex = 1;
@@ -179,7 +201,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 40);
+            this.textBox1.Location = new System.Drawing.Point(6, 36);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 19);
             this.textBox1.TabIndex = 0;
@@ -272,7 +294,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox1;
@@ -285,5 +306,7 @@
         private System.Windows.Forms.TextBox ToplamHastaSonuc;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox OrtalamaYatısSonuc;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox EnCokGorulen;
     }
 }
