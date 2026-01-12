@@ -57,10 +57,9 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(24, 44);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox2.Location = new System.Drawing.Point(12, 23);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(512, 62);
+            this.textBox2.Size = new System.Drawing.Size(256, 31);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Hasta Takip Sistemi";
             // 
@@ -70,12 +69,11 @@
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 144);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 75);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1348, 677);
+            this.dataGridView1.Size = new System.Drawing.Size(674, 352);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -93,11 +91,9 @@
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 833);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(12, 433);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox1.Size = new System.Drawing.Size(770, 363);
+            this.groupBox1.Size = new System.Drawing.Size(385, 189);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İstatistikler";
@@ -107,21 +103,19 @@
             // 
             this.EnCokGorulen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EnCokGorulen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EnCokGorulen.Location = new System.Drawing.Point(442, 281);
-            this.EnCokGorulen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.EnCokGorulen.Location = new System.Drawing.Point(221, 146);
             this.EnCokGorulen.Name = "EnCokGorulen";
-            this.EnCokGorulen.Size = new System.Drawing.Size(200, 37);
+            this.EnCokGorulen.Size = new System.Drawing.Size(100, 19);
             this.EnCokGorulen.TabIndex = 11;
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Control;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(12, 281);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox5.Location = new System.Drawing.Point(6, 146);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(308, 37);
+            this.textBox5.Size = new System.Drawing.Size(177, 19);
             this.textBox5.TabIndex = 10;
             this.textBox5.Text = "En çok görülen hastalık: ";
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
@@ -131,10 +125,9 @@
             this.textBox8.BackColor = System.Drawing.SystemColors.Control;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox8.Location = new System.Drawing.Point(12, 225);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox8.Location = new System.Drawing.Point(6, 117);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(290, 37);
+            this.textBox8.Size = new System.Drawing.Size(168, 19);
             this.textBox8.TabIndex = 9;
             this.textBox8.Text = "Ortalama Yatış süresi: ";
             // 
@@ -142,10 +135,9 @@
             // 
             this.OrtalamaYatısSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OrtalamaYatısSonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrtalamaYatısSonuc.Location = new System.Drawing.Point(442, 225);
-            this.OrtalamaYatısSonuc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.OrtalamaYatısSonuc.Location = new System.Drawing.Point(221, 117);
             this.OrtalamaYatısSonuc.Name = "OrtalamaYatısSonuc";
-            this.OrtalamaYatısSonuc.Size = new System.Drawing.Size(200, 37);
+            this.OrtalamaYatısSonuc.Size = new System.Drawing.Size(100, 19);
             this.OrtalamaYatısSonuc.TabIndex = 8;
             this.OrtalamaYatısSonuc.TextChanged += new System.EventHandler(this.OrtalamaYatısSonuc_TextChanged);
             // 
@@ -153,10 +145,9 @@
             // 
             this.TaburcuHastaSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TaburcuHastaSonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaburcuHastaSonuc.Location = new System.Drawing.Point(442, 177);
-            this.TaburcuHastaSonuc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TaburcuHastaSonuc.Location = new System.Drawing.Point(221, 92);
             this.TaburcuHastaSonuc.Name = "TaburcuHastaSonuc";
-            this.TaburcuHastaSonuc.Size = new System.Drawing.Size(200, 37);
+            this.TaburcuHastaSonuc.Size = new System.Drawing.Size(100, 19);
             this.TaburcuHastaSonuc.TabIndex = 7;
             // 
             // YatanHastaSonuc
@@ -164,10 +155,9 @@
             this.YatanHastaSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.YatanHastaSonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YatanHastaSonuc.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.YatanHastaSonuc.Location = new System.Drawing.Point(442, 129);
-            this.YatanHastaSonuc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.YatanHastaSonuc.Location = new System.Drawing.Point(221, 67);
             this.YatanHastaSonuc.Name = "YatanHastaSonuc";
-            this.YatanHastaSonuc.Size = new System.Drawing.Size(200, 37);
+            this.YatanHastaSonuc.Size = new System.Drawing.Size(100, 19);
             this.YatanHastaSonuc.TabIndex = 6;
             // 
             // ToplamHastaSonuc
@@ -175,31 +165,28 @@
             this.ToplamHastaSonuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ToplamHastaSonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToplamHastaSonuc.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ToplamHastaSonuc.Location = new System.Drawing.Point(442, 69);
-            this.ToplamHastaSonuc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ToplamHastaSonuc.Location = new System.Drawing.Point(221, 36);
             this.ToplamHastaSonuc.Name = "ToplamHastaSonuc";
-            this.ToplamHastaSonuc.Size = new System.Drawing.Size(200, 37);
+            this.ToplamHastaSonuc.Size = new System.Drawing.Size(100, 19);
             this.ToplamHastaSonuc.TabIndex = 5;
             this.ToplamHastaSonuc.TextChanged += new System.EventHandler(this.ToplamHastaSonuc_TextChanged);
             // 
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(12, 415);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox6.Location = new System.Drawing.Point(6, 216);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 37);
+            this.textBox6.Size = new System.Drawing.Size(100, 19);
             this.textBox6.TabIndex = 4;
             // 
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(12, 177);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox4.Location = new System.Drawing.Point(6, 92);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(290, 37);
+            this.textBox4.Size = new System.Drawing.Size(168, 19);
             this.textBox4.TabIndex = 2;
             this.textBox4.Text = "Taburcu Olan Hastalar: ";
             // 
@@ -208,10 +195,9 @@
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 129);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox3.Location = new System.Drawing.Point(6, 67);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 37);
+            this.textBox3.Size = new System.Drawing.Size(100, 19);
             this.textBox3.TabIndex = 1;
             this.textBox3.Text = "Yatan Hasta: ";
             // 
@@ -220,10 +206,9 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 69);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox1.Location = new System.Drawing.Point(6, 36);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 37);
+            this.textBox1.Size = new System.Drawing.Size(100, 19);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Toplam Hasta: ";
             // 
@@ -234,11 +219,9 @@
             this.groupBox2.Controls.Add(this.Sil);
             this.groupBox2.Controls.Add(this.HastaEkle);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(826, 833);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Location = new System.Drawing.Point(413, 433);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox2.Size = new System.Drawing.Size(544, 363);
+            this.groupBox2.Size = new System.Drawing.Size(272, 189);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "İşlemler";
@@ -246,10 +229,9 @@
             // HastaTür
             // 
             this.HastaTür.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.HastaTür.Location = new System.Drawing.Point(286, 223);
-            this.HastaTür.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HastaTür.Location = new System.Drawing.Point(143, 116);
             this.HastaTür.Name = "HastaTür";
-            this.HastaTür.Size = new System.Drawing.Size(216, 94);
+            this.HastaTür.Size = new System.Drawing.Size(108, 49);
             this.HastaTür.TabIndex = 3;
             this.HastaTür.Text = "Hastalık Türleri";
             this.HastaTür.UseVisualStyleBackColor = false;
@@ -258,10 +240,9 @@
             // Güncelle
             // 
             this.Güncelle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Güncelle.Location = new System.Drawing.Point(286, 71);
-            this.Güncelle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Güncelle.Location = new System.Drawing.Point(143, 37);
             this.Güncelle.Name = "Güncelle";
-            this.Güncelle.Size = new System.Drawing.Size(216, 94);
+            this.Güncelle.Size = new System.Drawing.Size(108, 49);
             this.Güncelle.TabIndex = 2;
             this.Güncelle.Text = "Hasta güncelle";
             this.Güncelle.UseVisualStyleBackColor = false;
@@ -270,10 +251,9 @@
             // Sil
             // 
             this.Sil.BackColor = System.Drawing.Color.Red;
-            this.Sil.Location = new System.Drawing.Point(32, 223);
-            this.Sil.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Sil.Location = new System.Drawing.Point(16, 116);
             this.Sil.Name = "Sil";
-            this.Sil.Size = new System.Drawing.Size(214, 94);
+            this.Sil.Size = new System.Drawing.Size(107, 49);
             this.Sil.TabIndex = 1;
             this.Sil.Text = "Sil";
             this.Sil.UseVisualStyleBackColor = false;
@@ -282,10 +262,9 @@
             // HastaEkle
             // 
             this.HastaEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.HastaEkle.Location = new System.Drawing.Point(32, 71);
-            this.HastaEkle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HastaEkle.Location = new System.Drawing.Point(16, 37);
             this.HastaEkle.Name = "HastaEkle";
-            this.HastaEkle.Size = new System.Drawing.Size(214, 94);
+            this.HastaEkle.Size = new System.Drawing.Size(107, 49);
             this.HastaEkle.TabIndex = 0;
             this.HastaEkle.Text = "Hasta Ekle";
             this.HastaEkle.UseVisualStyleBackColor = false;
@@ -293,14 +272,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1422, 1219);
+            this.ClientSize = new System.Drawing.Size(711, 636);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Hasta Takip Sistemi";
             this.Load += new System.EventHandler(this.Form1_Load);
