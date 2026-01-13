@@ -175,6 +175,7 @@ namespace hospital_management
             numbertxt_Yas.Value = 1;
             taburcu_checkbox.Checked = false;
             dateT_taburcuTarihi.Enabled = false;
+            txt_uygulnanTedaviler.Text = "";
         }
 
         // kapat butonu
